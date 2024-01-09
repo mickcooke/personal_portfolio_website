@@ -97,6 +97,16 @@ p {
     padding-left: 2rem;
 }
 
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-text {
+    color:white;
+    font-weight: bold;
+
+}
+
 /* ---------- MAIN CONTAINER ---------- */
 
 p a {
@@ -112,7 +122,7 @@ p a:hover, p a:focus {
 }
 
 .orange-bg {
-    background-color: rgba(247, 156, 55, .8);
+    background-color: #f96511;
     color: white;
 }
 
@@ -316,3 +326,4 @@ ul.footer-links li a:hover, ul.footer-links li a:focus {
     max-width: 100%;
     height: auto;
 }
+
