@@ -6,59 +6,47 @@
 }
 <!DOCTYPE HTML>
 
-
-		<!-- This is where we're going to render our content -->
-		
-		<!--<div class="container">-->
-
-		<!--	<div class="row section">-->
-		<!--		<div class="col-md-12">-->
-
-		<!--			@Model.Value("bodyText")-->
-
-		<!--		</div>				-->
-		<!--	</div>-->
-
-		<!--</div>-->
-
-		 <!--Grey Banner -->
-		<!--<div class="container-fluid grey-bg">-->
-		<!--	<div class="container">-->
-		<!--		<div class="row section">-->
-		<!--			<div class="col-md-8">-->
-		<!--				<h2>A flexible CMS - do things your way</h2>-->
-		<!--				<p>The Umbraco source code is free and available for download either as a ZIP file or via NuGet under the MIT license, so you can <a href="#">start crafting websites in Umbraco today</a>. -->
-		<!--				Need to build a site with multiple 3rd party extensions and customized add-ons? No problem. Need to build a simple site with a straightforward contact form? No problem.</p>-->
-		<!--				<p>Whatever type or scale of your project, Umbraco will be able to handle it - and the cherry on top; with Umbraco’s well-known editor friendly UI, -->
-		<!--					no matter how complex a site you’re building, you know that your editors will still find it a breeze to edit. Oh, and the cherry on top of the cherry - -->
-		<!--					there's <span class="font-weight-bold">no need for you to spend time learning a new coding or templating language as Umbraco is based on C#, javaScript and Razor</span>. </p>-->
-		<!--			</div>-->
-		<!--			<div class="col-md-4">-->
-		<!--				<img src="/images/community.png" class="img-fluid" alt="Community illustration">-->
-		<!--			</div>-->
-		<!--		</div>-->
-		<!--	</div>-->
-		<!--</div>-->
+		<!-- Jumbotron, w title -->
+		<!--<div class="jumbotron text-center jumbotron-fluid">-->
+		<div class="container-fluid" style="background-image:url('/images/mick-4.JPG'); background-size:cover; mt--2">
+			<div class="container pt-5 pb-5">
+				<!--<h1 class="display-1">Welcome - UmbracoTV</h1>-->
+				<div class ="container" style="margin-left: 0!important;
+  margin-right: 0!important; white-space: pre-line">
+				<p style="color:white; font-size:2rem"><BR>@Model.Value("title", fallback: Fallback.ToAncestors)</p><BR>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+			</div>
+		</div>
 
 		<!-- Blog section -->
 		<div class="container">
 
 			<div class="row section" style="justify-content:space-around;">
 				<div class="col-md-12">
-					<h1>Recent Projects</h1>
+					<h1 style="text-align:center;">Recent Projects</h1>
 				</div>
 
 				<!-- Blog Post query goes here. -->
-				<div class="col-md-4">
-					<div class="box-blog" style="height:560px;">
+				<div class="col-md-5">
+					<div class="box-blog">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/Eilidhs_Trust_Homepage.png')"></div></a>
-						<h5>Personal Portfolio</h5>
-						<p>Built using Umbraco</p>
+						<h5>@Model.Value("blog1Title")</h5>
+						<p>@Model.Value("blog1Description")</p>
 					</div>
 					<a href="Blogpost.html" class="btn btn-inverted">Read more >></a>
 				</div>
-				<div class="col-md-4">
-					<div class="box-blog" style="height:560px;">
+				<div class="col-md-5">
+					<div class="box-blog">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/Eilidhs_Trust_Homepage.png')"></div></a>
 						<h5>Eilidh MacLeod Memorial Trust Website</h5>
 						<p>I’ve been volunteering for the Scottish Tech 
@@ -72,8 +60,8 @@ and is still a work in progress.</p>
 					</div>
 					<a href="#" class="btn btn-inverted">Visit >></a>
 				</div>
-				<div class="col-md-4">
-					<div class="box-blog" style="height:560px;">
+				<div class="col-md-5">
+					<div class="box-blog">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/MovieMatch_homepage.png')"></div></a>
 						<h5>MovieMatch</h5>
 						<!--<p class="blog-meta">January 20th 2020 - by Sofie Toft</p>-->
@@ -86,17 +74,3 @@ and is still a work in progress.</p>
 
 		</div>
 
-		<!-- Call to Action -->
-		<!--<div class="container-fluid orange-bg">-->
-		<!--	<div class="container">-->
-
-		<!--		<div class="row section">-->
-		<!--			<div class="col-md-12 text-center">-->
-		<!--				<h1>How to continue your Umbraco journey</h1>-->
-		<!--				<p>What’s next? We have gathered the 3 best ways for you to go on from here ensuring you get the best start to your Umbraco journey: <br/><br/></p>-->
-		<!--				<a href="#" class="btn btn-inverted-orange" role="button">3 ways to start your Umbraco Journey >></a>-->
-		<!--			</div>-->
-		<!--		</div>-->
-	
-		<!--	</div>-->
-		<!--</div>-->
