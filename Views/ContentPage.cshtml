@@ -5,40 +5,44 @@
 	Layout = "Master.cshtml";
 }
 
+
+
+<!-- Jumbotron, w title -->
+		<!--<div class="jumbotron text-center jumbotron-fluid">-->
+	<div class="container-fluid" style="background-image:url('/images/AboutMickBanner2.png'); background-size:cover;">
+		   <div class="container" style="height:150px"></div>
+		</div>
+
+
+
 		<!-- Main container -->
         <div class="container">
-            
-            <div class="row section">
-                <div class="col-md-12">
-					<div class="container">
 
-						<div class="row section">
-							<div class="col-md-8">
-							 <p>
+			<div class="row section">
+				<div class="col-md-8">
+					<p>
                     @Model.Value("bodyText")
-                </p>
-                <img src="@Model.AwardsImages.Url()" style="width:70%; display: block; margin-left: 0px"/>
-							</div>
-							<div class="col-md-4">
-								<img src="@Model.Image1.Url()" class="img-fluid" alt="Mick accepting a Brit award" style="margin-top:25px; border-radius:10px; box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);">
-							</div>
-						</div>
+                    </p>
+                    <img src="@Model.AwardsImages.Url()" style="width:70%; display: block; margin-left: 0px"/>
+				</div>
+							
+							
+				<div class="col-md-4">
+					<img src="@Model.Image1.Url()" class="img-fluid" alt="Mick accepting a Brit award" style="margin-top:25px; border-radius:10px; box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);">
+				</div>
+			</div>
 
 
-						<div class="row section">
-							<div class="col-md-4">
-								<img src="@Model.Image2.Url()" class="img-fluid" alt="Mick presenting at CodeClan" style="margin-top:20px; border-radius:10px; box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);">
-							</div>
-							<div class="col-md-8">
-								 <p>
+			<div class="row section">
+				<div class="col-md-4">
+					<img src="@Model.Image2.Url()" class="img-fluid" alt="Mick presenting at CodeClan" style="margin-top:20px; border-radius:10px; box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.4);">
+				</div>
+			    <div class="col-md-8">
+				<p>
                     @Model.Value("bodyText2")
                 </p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-            </div>
+			    </div>
+		    </div>
 
         </div>
 
@@ -48,5 +52,3 @@
 					
 					
 					
-
-        </div>
