@@ -5,13 +5,36 @@
 	Layout = "Master.cshtml";
 }
 
-	<!-- Main container -->
-        <div class="container">
+   <div class = "container">       
             
-            <div class="row section">
-                <div class="col-md-12">
-					@Model.Value("bodyText")
-				</div>
+            
+            <div class="row section" style="justify-content:space-around;">
+                
+            <div class="col-md-11" style="display: block; margin-left: auto; margin-right: auto;">
+                <p>
+                    @Model.Value("bodyText")
+                </p>
+                
             </div>
+              <div class="col-md-6">
+				<img src="@Model.Image1.Url()" style="width:350px; display: block; margin-left: auto; margin-right: auto;"/>
+				</div>
+				<div class="col-md-6">
+				<img src="@Model.Image2.Url()" style="width:350px; display: block; margin-left: auto; margin-right: auto;"/>
+				</div>
+			</div>
+			
+			<div class="col-md-11" style="display: block; margin-left: auto; margin-right: auto;">
+                <p>
+                    @Model.Value("bodyText2")
+                </p>
+            </div>
+            
+            <div class="col-md-11" style="display: block; margin-left: auto; margin-right: auto;">
+               <img src="@Model.AwardsImages.Url()" style="width:70%; display: block; margin-left: auto; margin-right: auto;"/>
+            </div>
+					
+					
+					
 
         </div>
