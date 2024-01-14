@@ -1,35 +1,11 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
-@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Project1>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-	Layout = "Master.cshtml";
+	Layout = null;
 }
 <!DOCTYPE HTML>
-
-		<!-- Jumbotron, w title -->
-		<!--<div class="jumbotron text-center jumbotron-fluid">-->
-		<div class="container-fluid" style="background-image:url('/images/mick-4.JPG'); background-size:cover; mt--2">
-			<div class="container pt-5 pb-5">
-				<!--<h1 class="display-1">Welcome - UmbracoTV</h1>-->
-				<div class ="container" style="margin-left: 0!important;
-  margin-right: 0!important; white-space: pre-line">
-				<p style="color:white; font-size:2rem"><BR>@Model.Value("title", fallback: Fallback.ToAncestors)</p><BR>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-			</div>
-		</div>
-
-		<!-- Blog section -->
-		<div class="container">
+<div class="container">
 
 			<div class="row section" style="justify-content:space-around;">
 				<div class="col-md-12">
@@ -72,4 +48,3 @@
 			</div>
 
 		</div>
-
