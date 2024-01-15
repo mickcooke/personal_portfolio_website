@@ -1,0 +1,41 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ProjectPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<!-- <div class="container">-->
+
+<!--			<div class="row section">-->
+<!--				<div class="col-md-12">-->
+                   
+<!--                   <p>@Model.Value("blog1Image", fallback: Fallback.ToAncestors)</p>-->
+<!--                    <p>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</p>-->
+<!--                    <p>@Model.Value("blog1ShortText", fallback: Fallback.ToAncestors)</p>-->
+<!--                    <p>@Model.Value("blog2ButtonText", fallback: Fallback.ToAncestors)</p>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--</div>-->
+
+
+
+<div class="container">
+
+		
+					<p style="text-align:center;">Personal Portfolio |
+					                                Eilidh's Trust |
+					                                MovieMatch |
+					                                Hats
+					                                </p>
+	
+						<p style="text-align:center;">@Model.Value("blog1Image", fallback: Fallback.ToAncestors)</p>
+						<h5>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog1ShortText", fallback: Fallback.ToAncestors)</p>
+					<a href="project1" class="btn btn-inverted">@Model.Value("blog1ButtonText", fallback: Fallback.ToAncestors)</a>
+			
+			
+		
+
+		</div>
+

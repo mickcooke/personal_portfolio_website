@@ -40,34 +40,34 @@
 				<div class="col-md-5">
 					<div class="box-blog" style="height:400px">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/Personal_site.png')"></div></a>
-						<h5>@Model.Value("blog1Title")</h5>
-						<p>@Model.Value("blog1ShortText")</p>
+						<h5>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog1ShortText", fallback: Fallback.ToAncestors)</p>
 					</div>
-					<a href="Blogpost.html" class="btn btn-inverted">@Model.Value("blog1ButtonText")</a>
+					<a href="project1" class="btn btn-inverted">@Model.Value("blog1ButtonText", fallback: Fallback.ToAncestors)</a>
 				</div>
 				<div class="col-md-5">
 					<div class="box-blog" style="height:400px">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/Eilidhs_Trust_Homepage.png')"></div></a>
-						<h5>@Model.Value("blog2Title")</h5>
-						<p>@Model.Value("blog2ShortText")</p>
+						<h5>@Model.Value("blog2Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog2ShortText", fallback: Fallback.ToAncestors)</p>
 					</div>
-					<a href="#" class="btn btn-inverted">@Model.Value("blog2ButtonText")</a>
+					<a href="project2" class="btn btn-inverted">@Model.Value("blog2ButtonText", fallback: Fallback.ToAncestors)</a>
 				</div>
 				<div class="col-md-5">
 					<div class="box-blog" style="height:400px">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/MovieMatch_homepage.png')"></div></a>
-						<h5>@Model.Value("blog3Title")</h5>
-						<p>@Model.Value("blog3ShortText")</p>
+						<h5>@Model.Value("blog3Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog3ShortText", fallback: Fallback.ToAncestors)</p>
 					</div>
-					<a href="#" class="btn btn-inverted blog-box-btn">@Model.Value("blog3ButtonText")</a>
+					<a href="#" class="btn btn-inverted blog-box-btn">@Model.Value("blog3ButtonText", fallback: Fallback.ToAncestors)</a>
 				</div>
 					<div class="col-md-5">
 					<div class="box-blog" style="height:400px">
 						<a href="#"><div class="blog-promoImage" style="background-image:url('/images/hats.png')"></div></a>
-						<h5>@Model.Value("blog4Title")</h5>
-						<p>@Model.Value("blog4ShortText")</p>
+						<h5>@Model.Value("blog4Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog4ShortText", fallback: Fallback.ToAncestors)</p>
 					</div>
-					<a href="#" class="btn btn-inverted blog-box-btn">@Model.Value("blog4ButtonText")</a>
+					<a href="#" class="btn btn-inverted blog-box-btn">@Model.Value("blog4ButtonText", fallback: Fallback.ToAncestors)</a>
 				</div>
 			</div>
 
