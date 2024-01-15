@@ -5,37 +5,26 @@
 	Layout = "Master.cshtml";
 }
 
-<!-- <div class="container">-->
-
-<!--			<div class="row section">-->
-<!--				<div class="col-md-12">-->
-                   
-<!--                   <p>@Model.Value("blog1Image", fallback: Fallback.ToAncestors)</p>-->
-<!--                    <p>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</p>-->
-<!--                    <p>@Model.Value("blog1ShortText", fallback: Fallback.ToAncestors)</p>-->
-<!--                    <p>@Model.Value("blog2ButtonText", fallback: Fallback.ToAncestors)</p>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--</div>-->
-
-
-
 <div class="container">
+    <div class="row section" style="justify-content:space-around;">
+				<div class="col-md-12">
+					<p style="text-align:center;"><a href="project1" style="text-decoration:none;">Personal Portfolio</a> |
+					                                <a href="project2" style="text-decoration:none;">Eilidh's Trust |</a>
+					                                <a href="project3" style="text-decoration:none;">MovieMatch |</a>
+					                                <a href="project3" style="text-decoration:none;">Hats</a></p>
+	            </div>
+			
 
-		
-					<p style="text-align:center;">Personal Portfolio |
-					                                Eilidh's Trust |
-					                                MovieMatch |
-					                                Hats
-					                                </p>
-	
-						<p style="text-align:center;">@Model.Value("blog1Image", fallback: Fallback.ToAncestors)</p>
-						<h5>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</h5>
+				<!-- Blog Post query goes here. -->
+				<div class="col-md-6">
+				    <div class="box-blog" style="height:800px">
+				        <h5>@Model.Value("blog1Title", fallback: Fallback.ToAncestors)</h5>
+						<p>@Model.Value("blog1Image", fallback: Fallback.ToAncestors)</p>
 						<p>@Model.Value("blog1ShortText", fallback: Fallback.ToAncestors)</p>
-					<a href="project1" class="btn btn-inverted">@Model.Value("blog1ButtonText", fallback: Fallback.ToAncestors)</a>
-			
-			
-		
+					    <p style="text-decoration:none;">@Model.Value("blog1ButtonText", fallback: Fallback.ToAncestors)</p>
+					 </div>
+				</div>
+	</div>
+</div>
 
-		</div>
 
